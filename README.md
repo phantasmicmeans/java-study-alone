@@ -1,2 +1,0 @@
-# java-study-alone
-jaVa
