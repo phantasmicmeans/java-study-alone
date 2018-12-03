@@ -1,16 +1,14 @@
 package ArrayList;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import static org.junit.Assert.*;
 
 import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.toCollection;
 import static java.util.stream.Collectors.toSet;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Usage {
 
