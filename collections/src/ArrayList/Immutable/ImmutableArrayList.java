@@ -23,6 +23,7 @@ public class ImmutableArrayList {
 
     @Test(expected = UnsupportedOperationException.class)
     public void givenJdk_ImmutableList(){
+        makeImmutableList();
         List<String> unmodifiableList = this.list;
         unmodifiableList.add("more practice");
     }

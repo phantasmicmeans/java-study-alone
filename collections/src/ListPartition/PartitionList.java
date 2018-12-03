@@ -27,6 +27,7 @@ public class PartitionList{
 
     @Test
     public void partitioningList_Guava() {
+
         List<String> strList = makeList_Arrays_guava(this.list);
         List<List<String>> subList = Lists.partition(strList, 5);
         printListItem(subList);
@@ -55,9 +56,8 @@ public class PartitionList{
 
     //print a list if not a null
     public String printList(List<String> list){
-        ListIterator<String> iterator = list.listIterator();
-        while(iterator.hasNext()){
-            System.out.println(iterator.next()); }
+
+        list.listIterator().forEachRemaining(System.out::println);
         System.out.println("list iterate complete");
 
         return "complete";
