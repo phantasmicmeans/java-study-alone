@@ -18,7 +18,7 @@ public class ImmutableArrayList {
     public void makeImmutableList(){
         //JDK provides a nice way to get an unmodifiable collection out of an existing one
         addToList();
-        Collections.unmodifiableList(this.list);
+        this.list = Collections.unmodifiableList(this.list);
     }
 
     @Test(expected = UnsupportedOperationException.class)
