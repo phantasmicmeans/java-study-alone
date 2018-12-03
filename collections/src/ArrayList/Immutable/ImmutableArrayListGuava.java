@@ -10,6 +10,7 @@ public class ImmutableArrayListGuava {
 
     //with Guava
     private List<String> list_guava = new ArrayList<>();
+    private List<String> list_guava_builder = new ArrayList<>();
 
     public void addToList_list_guava() { list_guava.add("practice"); }
 
@@ -28,5 +29,12 @@ public class ImmutableArrayListGuava {
         unmodifiableList.add("more practice");
     }
 
+    @Test(expected =  UnsupportedOperationException.class)
+    public void givenGuava_ImmutableList_builder(){
+        //Guava also provides a builder - this will returned the strong-typed ImmutableList
+        list_guava_builder.add("practice");
+        ImmutableList<Object> unmodifiableList = ImmutableList.builder().addAll(list_guava_builder).build();
+        unmodifiableList.add("more practice");
+    }
 
 }
