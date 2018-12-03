@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ListIterator;
 
-public class PartitionList {
+public class PartitionList{
     //How to split a List into several sublist of given size
     //no support in the standard Java Collection API.
     //Guava and the Apache Commons Collections have some way
@@ -32,7 +32,7 @@ public class PartitionList {
         printListItem(subList);
 
         List<String> lastPartition = getLastPartition(subList);
-        printOneList(lastPartition);
+        printSubList(lastPartition);
     }
 
     public void printListItem(List<List<String>> list) {
@@ -42,25 +42,33 @@ public class PartitionList {
 
         while (iterator.hasNext()) {
             System.out.println("Index : " + number++);
-            ListIterator subIterator = iterator.next().listIterator();
-            while (subIterator.hasNext()) {
-                System.out.println(subIterator.next());
+            if(printSubList(iterator.next()).equals("empty")){
+                return;
             }
         }
     }
 
-    public void printOneList(List<String> list) {
-
-        ListIterator<String> iterator = list.listIterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
+    //print sub list, null check
+    public String printSubList(List<String> list){
+        return (!list.isEmpty()) ? printList(list) : printList_if_empty();
     }
+
+    //print a list if not a null
+    public String printList(List<String> list){
+        ListIterator<String> iterator = list.listIterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next()); }
+        System.out.println("list iterate complete");
+
+        return "complete";
+    }
+
+    //return list empty if list empty
+    public String printList_if_empty(){ return "empty"; }
 
     //get Last partition from a List<List<String>>
     public List<String> getLastPartition(List<List<String>> list) {
         return (!list.isEmpty()) ? list.get(list.size() - 1) : null;
     }
-
 
 }
