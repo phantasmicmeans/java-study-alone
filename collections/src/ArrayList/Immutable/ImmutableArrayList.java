@@ -17,14 +17,13 @@ public class ImmutableArrayList {
     @Test
     public void makeImmutableList(){
         //JDK provides a nice way to get an unmodifiable collection out of an existing one
-        addToList();;
+        addToList();
         Collections.unmodifiableList(this.list);
     }
 
     @Test(expected = UnsupportedOperationException.class)
     public void givenJdk_ImmutableList(){
-        makeImmutableList();
-        List<String> unmodifiableList = Collections.unmodifiableList(this.list);
+        List<String> unmodifiableList = this.list;
         unmodifiableList.add("more practice");
     }
 
