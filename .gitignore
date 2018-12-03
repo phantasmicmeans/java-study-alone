@@ -1,0 +1,18 @@
+##intellJ
+*.iml
+
+.idea/
+.class
+
+*.ipr
+*.iws
+
+/out/
+
+## Eclipse Core
+.project
+.classpath
+.settings
+.springBeans
+.metadata
+.recommenders
