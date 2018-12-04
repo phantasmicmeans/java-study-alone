@@ -22,7 +22,7 @@ public class MoreUsageIntStream {
     }
 
     @Test
-    public void forLooptIntStreamUpdate() {
+    public void forLoopIntStreamUpdate() {
         //this one looks better, But filter is Lazy..
         //same as the upper one.
         IntStream.range(1, 100).filter(i -> i < 50).forEach(System.out::println);
