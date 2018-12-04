@@ -1,4 +1,4 @@
-package ListPartition;
+package ArrayList.ListPartition;
 
 import com.google.common.collect.Lists;
 import org.junit.Test;
