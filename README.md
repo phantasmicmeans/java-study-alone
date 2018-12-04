@@ -11,6 +11,8 @@ java study - basic usage what I need..
   
   2. Partitioning - not Collection API, but Guava..
   
+  3. NullsAndDuplicates Remove - Plain Java, Guava, Lambda
+  
  <br>
 
 
@@ -29,7 +31,13 @@ java study - basic usage what I need..
 
  <br>
  
-## 3. TODO ##
+## 3. Thread ##
+
+1. Concurrent 
+
+<br>
+
+## TODO ##
  
 **I'll add What I Need!!!**
 
