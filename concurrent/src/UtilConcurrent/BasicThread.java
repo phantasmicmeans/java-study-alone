@@ -1,13 +1,18 @@
 package UtilConcurrent;
 
 import org.junit.Test;
-
+import static org.junit.Assert.*;
 public class BasicThread {
 
     Thread basic;
     ThreadTest threadTest = new ThreadTest();
     ThreadTestFirst threadTestFirst = new ThreadTestFirst();
 
+
+    @Test
+    public void fullTest(){
+        assertEquals(makeBasicThread(), this.basic);
+    }
 
     public Thread makeBasicThread() {
         this.basic = new Thread(threadTestFirst);
