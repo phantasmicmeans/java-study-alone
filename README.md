@@ -33,7 +33,7 @@ java study - basic usage what I need..
  
 ## 3. Thread ##
 
-1. Concurrent 
+1. Concurrent - Basic about Thread, Runnable
 
 <br>
 
