@@ -1,5 +1,6 @@
 package com.pattern.Command;
 
+import org.junit.Test;
 import org.junit.internal.Throwables;
 
 import java.io.*;
@@ -50,6 +51,20 @@ public class TextFile {
 
         Optional<URL> url = Optional.ofNullable(getClass().getResource(name));
         return new File(url.orElseThrow(FileNotFoundException::new).getPath()); // throw it file not found
+    }
+
+
+    @Test
+    public void test() throws IOException{
+
+        Optional<URL> url = Optional.ofNullable(getClass().getResource("command.txt"));
+        File file = new File(url.orElseThrow(()->new FileNotFoundException("Cannot found that file"))
+                                .getPath());
+
+        BufferedReader bReader = new BufferedReader(new FileReader(file));
+
+        String str;
+        while((str = bReader.readLine()) != null){ System.out.println(str); }
     }
 
 }
