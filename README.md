@@ -31,6 +31,11 @@ java study - basic usage what I need..
 
  <br>
  
+**Command**
+1. Clasic Command Pattern - Command / Receiver / Invoker / Client
+
+<br>
+
 ## 3. Thread ##
 
 1. Concurrent - Basic about Thread, Runnable
