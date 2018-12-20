@@ -1,5 +1,5 @@
-# java-study-alone with JUnit
-java study - basic usage what I need..  
+# Hava-study-alone with JUnit
+basic usage what I need..  
 
 
 <br>
