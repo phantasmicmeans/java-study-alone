@@ -42,6 +42,19 @@ basic usage what I need..
 
 <br>
 
+## 4. Generics
+
+1. Type T 
+2. WildCard(?)
+3. Upper/Lower Bound
+
+<br>
+
+## 4. JAVA8
+
+1. Lamda expression (Consumer, Supplier, Function, Operator, Predicate)
+
+<br>
 ## TODO ##
  
 **I'll add What I Need!!!**
@@ -55,3 +68,5 @@ basic usage what I need..
 - [ ] To
 - [x] Me
 - [ ] Sorry
+- [ ] Lambda expression (Operator, Predicate)
+- [ ] Stream API 
