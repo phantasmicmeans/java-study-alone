@@ -1,6 +1,4 @@
 package Generics.GenericsType;
-
-import com.sun.javafx.css.converters.PaintConverter;
 import org.junit.Test;
 
 import java.util.ArrayList;
