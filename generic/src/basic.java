@@ -1,8 +1,8 @@
-package Generics;
+package src;
 
-import Generics.GenericsType.GenericMethod;
-import Generics.GenericsType.GenericsType;
-import Generics.GenericsType.GenericsTypeOld;
+import src.GenericsType.GenericMethod;
+import src.GenericsType.GenericsType;
+import src.GenericsType.GenericsTypeOld;
 import org.junit.Test;
 
 import java.util.ArrayList;

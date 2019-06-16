@@ -1,4 +1,4 @@
-package Generics.GenericsType;
+package src.GenericsType;
 
 public class GenericsType<T> {
 

@@ -1,4 +1,4 @@
-package Generics.GenericsType;
+package src.GenericsType;
 
 
 import java.util.List;
