@@ -1,8 +1,5 @@
 package src.wildcard;
 
-
-import src.BasicStack;
-
 import java.util.*;
 
 /**
@@ -11,7 +8,7 @@ import java.util.*;
  * 즉, 매개변수화 타입 T 가 생산자면 <? extends T>를 사용하고,
  * 타입 T 가 소비자라면 <? super T>를 사용하라.
  */
-public class Stack <E> extends BasicStack <E> {
+public class Stack<E> extends BasicStack <E> {
 
     public void pushAll(Iterable<E> src) {
         for (E e : src) {
