@@ -1,4 +1,4 @@
-# Hava-study-alone with JUnit
+# Java-study-alone with JUnit
 basic usage what I need..  
 
 
